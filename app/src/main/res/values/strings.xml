@@ -1,0 +1,14 @@
+<resources>
+	<string name="app_name">UrunKayitSistemi</string>
+	<string name="app_login">Giriş Yap</string>
+	<string name="app_logout">Çıkış Yap</string>
+	<string name="page_previous">Önceki</string>
+	<string name="page_next">Sonraki</string>
+	<string name="email">EMail</string>
+	<string name="password">Şifre</string>
+	<string name="product_name">Ürün Adı</string>
+	<string name="product_price">Ürün Fiyatı</string>
+	<string name="product_image_url">Ürün Fotoğraf Linki</string>
+	<string name="product_create">Ürünü Kaydet</string>
+	<string name="go_back">Geri Dön</string>
+</resources>

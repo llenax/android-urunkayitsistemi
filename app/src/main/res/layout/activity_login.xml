@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_go_back_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_back"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:textColor="?attr/colorButtonNormal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/login_page_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_login"
+        android:textSize="@dimen/login_edit_text"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/padding_8"
+        android:backgroundTint="?attr/colorSecondary"
+        app:layout_constraintTop_toBottomOf="@+id/login_password" />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="@integer/login_input_width"
+        android:hint="@string/email"
+        android:layout_marginBottom="@dimen/padding_8"
+        android:inputType="text"
+        android:textSize="@dimen/login_edit_text"
+        android:textColor="?attr/colorButtonNormal"
+        android:textColorHint="?attr/colorButtonNormal"
+        android:backgroundTint="?attr/colorButtonNormal"
+        app:layout_constraintBottom_toTopOf="@+id/login_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="@integer/login_input_width"
+        android:hint="@string/password"
+        android:textSize="@dimen/login_edit_text"
+        android:textColor="?attr/colorButtonNormal"
+        android:textColorHint="?attr/colorButtonNormal"
+        android:backgroundTint="?attr/colorButtonNormal"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/login_page_login_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_email" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_page_login_btn" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero"
+        app:layout_constraintBottom_toTopOf="@+id/login_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_go_back_main" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

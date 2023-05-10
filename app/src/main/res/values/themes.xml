@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Light" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#F0F0F0</item>
+        <item name="colorSecondary">#3C486B</item>
+        <item name="android:statusBarColor">?attr/colorSecondary</item>
+        <item name="android:windowBackground">?attr/colorPrimary</item>
+        <item name="colorButtonNormal">#838383</item>
+        <item name="android:textColor">?attr/colorButtonNormal</item>
+        <item name="colorSecondaryVariant">#7C8EC0</item>
+    </style>
+
+    <style name="Theme.Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#343A40</item>
+        <item name="colorSecondary">#6A5ACD</item>
+        <item name="android:statusBarColor">?attr/colorSecondary</item>
+        <item name="android:windowBackground">?attr/colorPrimary</item>
+        <item name="colorButtonNormal">#B2B2B2</item>
+        <item name="android:textColor">?attr/colorButtonNormal</item>
+        <item name="colorSecondaryVariant">#8A80FF</item>
+    </style>
+</resources>

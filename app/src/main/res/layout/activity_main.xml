@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/productListRV"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+        <ImageView
+            android:id="@+id/topLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/padding_16"
+            android:backgroundTint="?attr/colorSecondary"
+            android:paddingHorizontal="@dimen/padding_8"
+            android:text="@string/app_login"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/topLine"
+            app:layout_constraintEnd_toStartOf="@+id/btn_logout"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_product_create"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/padding_16"
+            android:background="@drawable/btn_product_create"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/topLine" />
+
+        <TextView
+            android:id="@+id/user_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="?attr/colorButtonNormal"
+            android:textSize="@dimen/top_bar_title"
+            android:layout_marginStart="@dimen/padding_16"
+            app:layout_constraintBottom_toTopOf="@+id/topLine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/padding_16"
+            android:backgroundTint="?attr/colorButtonNormal"
+            android:paddingHorizontal="@dimen/padding_8"
+            android:text="@string/app_logout"
+            android:textColor="?attr/colorPrimary"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/topLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_product_sort_reverse"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_sort_reverse"
+            android:layout_marginEnd="@dimen/padding_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_product_sort"
+            app:layout_constraintTop_toBottomOf="@+id/topLine" />
+
+        <ImageButton
+            android:id="@+id/btn_product_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_sort"
+            android:layout_marginEnd="@dimen/padding_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/topLine" />
+
+        <ImageButton
+            android:id="@+id/btn_reload_main"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/padding_16"
+            android:background="@drawable/btn_refresh"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_product_sort_reverse"
+            app:layout_constraintTop_toBottomOf="@+id/topLine" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productListRV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@id/Toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar" />
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Toolbar"
+        style="@style/Toolbar"
+        android:visibility="gone"
+        android:background="@drawable/bottom_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_previous_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/padding_8"
+            android:layout_marginEnd="@dimen/padding_16"
+            android:backgroundTint="?attr/colorSecondary"
+            android:text="@string/page_next"
+            app:layout_constraintBottom_toBottomOf="@+id/Toolbar"
+            app:layout_constraintEnd_toEndOf="@+id/Toolbar"
+            app:layout_constraintTop_toTopOf="@+id/Toolbar" />
+
+        <Button
+            android:id="@+id/btn_next_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/padding_8"
+            android:layout_marginStart="@dimen/padding_16"
+            android:backgroundTint="?attr/colorSecondary"
+            android:text="@string/page_previous"
+            app:layout_constraintBottom_toBottomOf="@+id/Toolbar"
+            app:layout_constraintStart_toStartOf="@+id/Toolbar"
+            app:layout_constraintTop_toTopOf="@+id/Toolbar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
