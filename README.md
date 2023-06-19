@@ -1,15 +1,14 @@
-# **Sunum içeriği**
-
- - ### [0. Giriş](#giris)
- - ### [1. Aktivite Yönetimi](#aktivite-yonetimi)
- - ### [2. Uygulama Aktivite kaydı](#uygulama-aktivite-kaydi)
- - ### [3. Ürün liste yapısını oluşturma](#urun-liste-yapisini-olusturma)
- - ### [4. Ürün yapılarını listeye ekleme](#urun-yapilarini-listeye-ekleme)
- - ### [5. Ürünleri fiyatlarına göre listeleme](#urunleri-fiyatlarina-gore-listeleme)
- - ### [6. Kullanıcı Girişi](#kullanici-girisi)
- - ### [7. Ürünlerin veritabanı'na kayıt edilmesi](#urunlerin-veritabanina-kayit-edilmesi)
- - ### [8. Ürünlerin listeye eklenmesi](#urunlerin-listeye-eklenmesi)
- - ### [9. Aktiviteler arası geçiş ile uygulamanın tamamlanması](#aktiviteler-arasi-gecis-ile-uygulamanin-tamamlanmasi)
+ Sunum içeriği
+ - [0. Giriş](#giris)
+ - [1. Aktivite Yönetimi](#aktivite-yonetimi)
+ - [2. Uygulama Aktivite kaydı](#uygulama-aktivite-kaydi)
+ - [3. Ürün liste yapısını oluşturma](#urun-liste-yapisini-olusturma)
+ - [4. Ürün yapılarını listeye ekleme](#urun-yapilarini-listeye-ekleme)
+ - [5. Ürünleri fiyatlarına göre listeleme](#urunleri-fiyatlarina-gore-listeleme)
+ - [6. Kullanıcı Girişi](#kullanici-girisi)
+ - [7. Ürünlerin veritabanı'na kayıt edilmesi](#urunlerin-veritabanina-kayit-edilmesi)
+ - [8. Ürünlerin listeye eklenmesi](#urunlerin-listeye-eklenmesi)
+ - [9. Aktiviteler arası geçiş ile uygulamanın tamamlanması](#aktiviteler-arasi-gecis-ile-uygulamanin-tamamlanmasi)
 
 
 <a id="giris"></a>
